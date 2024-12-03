@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- TextView kecil di atas item barang -->
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Kategori Barang"
+        android:textSize="12sp"
+        android:textColor="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnEdit"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Nama Item -->
+    <TextView
+        android:id="@+id/tvNamaItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Item Barang"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnEdit"
+        android:layout_marginEnd="8dp" />
+
+    <!-- TextView kecil untuk jumlah -->
+    <TextView
+        android:id="@+id/tvJumlah"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Jumlah: 10"
+        android:textSize="12sp"
+        android:textColor="#757575"
+        app:layout_constraintStart_toStartOf="@id/tvNamaItem"
+        app:layout_constraintTop_toBottomOf="@id/tvNamaItem"
+        app:layout_constraintEnd_toEndOf="@id/tvNamaItem" />
+
+    <!-- Tombol Edit -->
+    <ImageView
+        android:id="@+id/btnEdit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintEnd_toStartOf="@id/btnDelete"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Tombol Hapus -->
+    <ImageView
+        android:id="@+id/btnDelete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
